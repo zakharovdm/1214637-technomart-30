@@ -337,5 +337,24 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
     </footer>
+
+    <section>
+      <h2>Обратная связь</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name-field">Ваше имя:</label><br>
+          <input type="text" id="name-field" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email-field">Ваш e-mail:</label><br>
+          <input type="email" id="email-field" name="user-email" placeholder="email@example.com">
+        </p>
+        <label for="message-field">Текст письма:</label><br>
+        <textarea id="message-field" name="user-message">В свободной форме</textarea>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+
   </body>
 </html>
