@@ -1,0 +1,266 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Cuprum";
+  src:  url(../fonts/cuprum.woff2) format("woff2"),
+        url(../fonts/cuprum.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src:  url(../fonts/cuprumbold.woff2) format("woff2"),
+        url(../fonts/cuprumbold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src:  url(../fonts/cuprumitalic.woff2) format("woff2"),
+        url(../fonts/cuprumitalic.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:  url(../fonts/ptsans.woff2) format("woff2"),
+        url(../fonts/ptsans.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:  url(../fonts/ptsansbold.woff2) format("woff2"),
+        url(../fonts/ptsansbold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-black-rgb: 0, 0, 0;
+  --basic-white-rgb: 255, 255, 255;
+  --basic-white: #FFFFFF;
+  --basic-light-grayish-blue: #F1F5F7;
+  --basic-high-grayish-blue: #F2F6F8;
+  --basic-grayish-blue: #C1C6CE;
+  --basic-dark-blue: #293449;
+  --basic-medium-dark-blue: #32425C;
+  --basic-dark-desaturated-blue: #212A3A;
+  --basic-high-dark-blue: #1D2739;
+  --basic-bright-cyan: #3BBCE3 ;
+  --basic-black: #000000;
+  --basic-mostly-black: #161D29;
+  --basic-red: #EE3643;
+  --basic-strong-red: #BA2732;
+  --basic-high-strong-red: #CA2C37;
+  --basic-green: #63A63E;
+  --basic-lime-green: #8ED78F;
+  --basic-strong-green: #5FBB2D;
+  --basic-dark-green: #518534;
+  --basic-orange: #FFBF47;
+  --basic-light-orange: #FFC047;
+  --basic-high-light-orange:#FFD180;
+  --basic-light-grayish-orange: #F9F5F0;
+  --basic-magenta: #DC91D8;
+  --basic-gray: #A9A9A9;
+  --basic-light-gray: #C5C5C5;
+  --basic-high-light-gray: #E5E5E5;
+  --basic-grayish-orange: #F7F3EC;
+  --basic-very-light-gray: #EAEAEA;
+  --basic-very-high-light-gray: #F1F1F1;
+  --basic-high-gray: #B5B5B5;
+}
+
+/* Global */
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main header */
+
+.header-wrap-top {
+  background-color: var(--basic-dark-blue);
+}
+
+.header-inner-logo {
+  background-color: var(--basic-red);
+  width: 220px;
+  height: 47px;
+}
+
+.header-form-search input {
+  background-color: transparent;
+  border: none;
+}
+
+.header-inner-user-block a {
+  color: var(--basic-white);
+}
+
+.button-order {
+  background-color: var(--basic-green);
+}
+
+.header-wrap-middle {
+  background-color: var(--basic-light-grayish-blue);
+}
+
+.main-title {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.header-phone-number {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+}
+
+.header-address {
+  font-size: 14px;
+  color: var(--basic-medium-dark-blue);
+}
+
+.button-login {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.site-navigation {
+  background-color: var(--basic-medium-dark-blue);
+}
+
+.site-nav-list {
+  list-style: none;
+}
+
+.site-nav-link {
+  color: var(--basic-white);
+}
+
+/*products*/
+
+.product-item h3,
+.feature-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.product-link {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: rgba(var(--basic-white-rgb), 0.3);
+}
+
+.product-item,
+.feature-item {
+  width: 300px;
+  height: 123px;
+}
+
+.product-item:nth-child(1) {
+  background-color: var(--basic-orange);
+}
+
+.product-item:nth-child(2) {
+  background-color: var(--basic-bright-cyan);
+}
+
+.product-item:nth-child(3) {
+  background-color: var(--basic-magenta);
+}
+
+.feature-item:nth-child(1) {
+  background-color: var(--basic-lime-green);
+}
+
+.feature-item:nth-child(2) {
+  background-color: var(--basic-light-orange);
+}
+
+/* slider */
+
+.slide {
+  width: 620px;
+  height: 266px;
+  background-color: var(--basic-black);
+}
+
+.inner-slide-title {
+  background-color: rgba(var(--basic-black-rgb), 0.25);
+  width: 620px;
+  height: 104px;
+}
+
+.slide h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.slide-one {
+  background: url(../img/slider-puncher.jpg) no-repeat;
+}
+
+.slide-two {
+  background: url(../img/slider-drill.jpg) no-repeat;
+}
+
+/*populars_goods*/
+
+
+
+/* wrap-titles */
+
+.wrap-title {
+  width: 940px;
+  height: 89px;
+  background-color: var(--basic-light-grayish-orange);
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-medium-dark-blue);
+  text-transform: uppercase;
+}
+
+/* buttons */
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+
