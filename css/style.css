@@ -83,6 +83,7 @@
   margin: 0;
   padding: 0;
   font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -237,9 +238,54 @@ img {
   background: url(../img/slider-drill.jpg) no-repeat;
 }
 
-/*populars_goods*/
+/* goods */
 
+.goods-item {
+  width: 220px;
+  height: 318px;
+  border: 1px solid var(--basic-very-light-gray);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
 
+.price {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.old-price {
+  color: var(--basic-gray);
+}
+
+.new-price {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.button-goods {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 135px;
+  height: 38px;
+}
+
+.button-buy {
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  border-radius: 2px;
+}
+
+.button-bookmark {
+  color: var(--basic-medium-dark-blue);
+  border: 3px solid var(--basic-green);
+
+}
 
 /* wrap-titles */
 
@@ -262,5 +308,7 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-red);
 }
+
+
 
 
