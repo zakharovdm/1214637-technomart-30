@@ -47,6 +47,7 @@
   --basic-white-rgb: 255, 255, 255;
   --basic-white: #FFFFFF;
   --basic-light-grayish-blue: #F1F5F7;
+  --basic-less-grayish-blue: #F3F7F9;
   --basic-high-grayish-blue: #F2F6F8;
   --basic-grayish-blue: #C1C6CE;
   --basic-dark-blue: #293449;
@@ -287,17 +288,63 @@ img {
 
 }
 
-/* wrap-titles */
+/* manufacturers */
+
+.manufacturers-item {
+  width: 220px;
+  height: 145px;
+  border: 1px solid var(--basic-very-light-gray);
+}
+
+/* services */
+
+.services {
+  background-color: var(--basic-light-grayish-blue);
+}
+
+.button-service {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-medium-dark-blue);
+}
+
+/* about */
+
+.about-item {
+  color: var(--basic-black);
+}
+
+/* titles */
 
 .wrap-title {
   width: 940px;
   height: 89px;
   background-color: var(--basic-light-grayish-orange);
+}
+
+.title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   color: var(--basic-medium-dark-blue);
   text-transform: uppercase;
 }
+
+.title-services {
+  color: var(--basic-black);
+}
+
+/* text */
+
+.text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
 
 /* buttons */
 
@@ -309,6 +356,50 @@ img {
   background-color: var(--basic-red);
 }
 
+/* main footer */
 
+.footer-wrap-top {
+  background-color: var(--basic-medium-dark-blue)
+}
 
+.footer-inner-logo {
+  background-color: var(--basic-red);
+  width: 220px;
+  height: 68px;
+}
+
+.footer-address,
+.footer-phone-number{
+  color: var(--basic-less-grayish-blue);
+}
+
+.footer-nav-item,
+.footer-category-item,
+.social-item {
+  list-style: none;
+}
+
+.footer-nav-link {
+  color: var(--basic-light-grayish-blue);
+}
+
+.footer-category-link {
+  color: var(--basic-high-light-orange);
+}
+
+.footer-wrap-bottom {
+  background-color: var(--basic-dark-blue);
+}
+
+.copy,
+.footer-feedback,
+.creator {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-feedback a,
+.creator a {
+  color: var(--basic-high-light-orange)
+}
 
