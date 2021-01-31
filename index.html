@@ -395,15 +395,17 @@
     <form class="form-modal" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal-name">
         <label class="modal-caption-name" for="name-field">Ваше имя:</label><br>
-        <input class="modal-name-field" type="text" id="name-field" name="user-name" placeholder="Имя Фамилия">
+        <input class="field modal-name-field" type="text" id="name-field" name="user-name" placeholder="Имя Фамилия">
       </p>
       <p class="modal-email">
         <label class="modal-caption-email" for="email-field">Ваш e-mail:</label><br>
-        <input class="modal-email-field" type="email" id="email-field" name="user-email" placeholder="email@example.com">
+        <input class="field modal-email-field" type="email" id="email-field" name="user-email" placeholder="email@example.com">
       </p>
       <label class="modal-caption-message" for="message-field">Текст письма:</label><br>
-      <textarea class="modal-message-field" id="message-field" name="user-message">В свободной форме</textarea>
-      <button class="button button-modal" type="submit">Отправить</button>
+      <textarea class="field modal-message-field" id="message-field" name="user-message">В свободной форме</textarea>
+      <div class="inner-modal-button">
+        <button class="button button-modal" type="submit">Отправить</button>
+      </div>
     </form>
   </section>
 

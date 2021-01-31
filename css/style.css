@@ -46,6 +46,7 @@
   --basic-black-rgb: 0, 0, 0;
   --basic-white-rgb: 255, 255, 255;
   --basic-white: #FFFFFF;
+  --basic-mostly-white: #F4F4F4;
   --basic-light-grayish-blue: #F1F5F7;
   --basic-less-grayish-blue: #F3F7F9;
   --basic-high-grayish-blue: #F2F6F8;
@@ -403,3 +404,20 @@ img {
   color: var(--basic-high-light-orange)
 }
 
+/* modal */
+
+.inner-modal-button {
+  width: 620px;
+  height: 112px;
+  background-color: var(--basic-mostly-white);
+}
+
+.form-modal {
+  color: var(--basic-black);
+}
+
+.field {
+  border: 2px solid var(--basic-light-gray);
+  color: var(--basic-gray);
+  font-size: 13px;
+}
