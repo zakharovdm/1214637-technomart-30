@@ -112,7 +112,7 @@ img {
 .header-inner-logo {
   background-color: var(--basic-red);
   width: 220px;
-  height: 47px;
+  padding: 12px 0 12px 0;
 }
 
 .header-form-search input {
@@ -189,7 +189,7 @@ img {
 
 .site-nav-item {
   width: 122px;
-  height: 60px;
+  padding: 16px 0 16px 0;
 }
 
 .site-nav-item:hover,
@@ -207,6 +207,8 @@ img {
 
 .site-nav-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-nav-link {
@@ -216,6 +218,13 @@ img {
 
 
 /*products*/
+
+.products-list,
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .product-item h3,
 .feature-item h3 {
@@ -244,7 +253,7 @@ img {
 .product-item,
 .feature-item {
   width: 300px;
-  height: 123px;
+  padding: 20px 0 21px 0;
 }
 
 .product-item:nth-child(1) {
@@ -271,14 +280,14 @@ img {
 
 .slide {
   width: 620px;
-  height: 266px;
+  min-height: 266px;
   background-color: var(--basic-black);
 }
 
 .inner-slide-title {
   background-color: rgba(var(--basic-black-rgb), 0.25);
   width: 620px;
-  height: 104px;
+  min-height: 104px;
 }
 
 .slide h3 {
@@ -298,9 +307,15 @@ img {
 
 /* goods */
 
+.populars_goods-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .goods-item {
   width: 220px;
-  height: 318px;
+  padding: 6px 0 21px 0;
   border: 1px solid var(--basic-very-light-gray);
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -330,7 +345,7 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   width: 135px;
-  height: 38px;
+  min-height: 38px;
 }
 
 .button-buy {
@@ -364,9 +379,15 @@ img {
 
 /* manufacturers */
 
+.manufacturers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .manufacturers-item {
   width: 220px;
-  height: 145px;
+  padding: 20px 0 20px 0;
   border: 1px solid var(--basic-very-light-gray);
 }
 
@@ -396,6 +417,10 @@ img {
 
 /* about */
 
+.about-list {
+  list-style: none;
+}
+
 .about-item {
   color: var(--basic-black);
 }
@@ -404,7 +429,7 @@ img {
 
 .wrap-title {
   width: 940px;
-  height: 89px;
+  min-height: 89px;
   background-color: var(--basic-light-grayish-orange);
 }
 
@@ -458,7 +483,7 @@ img {
 .footer-inner-logo {
   background-color: var(--basic-red);
   width: 220px;
-  height: 68px;
+  padding: 20px 0 20px 0;
 }
 
 .footer-address,
@@ -466,10 +491,12 @@ img {
   color: var(--basic-less-grayish-blue);
 }
 
-.footer-nav-item,
-.footer-category-item,
-.social-item {
+.footer-nav-list,
+.footer-categories-list,
+.social-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-nav-link {
@@ -522,7 +549,7 @@ img {
 
 .inner-modal-button {
   width: 620px;
-  height: 112px;
+  padding: 37px 0 37px 0;
   background-color: var(--basic-mostly-white);
 }
 
