@@ -735,3 +735,15 @@ img {
   color: var(--basic-gray);
   font-size: 13px;
 }
+
+.button-modal {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.modal h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
