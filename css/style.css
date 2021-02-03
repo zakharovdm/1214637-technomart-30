@@ -115,9 +115,18 @@ img {
   padding: 12px 0 12px 0;
 }
 
+.logo-catalog:active {
+  background-color: var(--basic-strong-red);
+}
+
 .header-form-search input {
   background-color: transparent;
   border: none;
+}
+
+.header-form-input:hover,
+.header-form-input:focus {
+  background-color: var(--basic-white);
 }
 
 .header-inner-user-block a {
@@ -141,6 +150,10 @@ img {
 .header-basket:active {
   background-color: var(--basic-mostly-black);
   color: rgba(var(--basic-white-rgb), 0.5);
+}
+
+.basket-complete {
+  background-color: var(--basic-red);
 }
 
 .header-wrap-middle {
@@ -182,6 +195,28 @@ img {
   color: var(--basic-light-gray);
 }
 
+.login-name a {
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.login-control a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-medium-dark-blue);
+}
+
+.login-control a:hover,
+.login-control a:focus {
+  color: var(--basic-red);
+}
+
+.login-name a:active,
+.login-control a:active {
+  color: var(--basic-light-gray);
+}
 
 .site-navigation {
   background-color: var(--basic-medium-dark-blue);
