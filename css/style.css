@@ -443,10 +443,11 @@ img {
 .button-service-active {
   color: var(--basic-medium-dark-blue);
   background-color: var(--basic-white);
+  border-color: var(--basic-white);
 }
 
-.button-service:hover,
-.button-service:focus {
+.button-service:hover:not(.button-service-active),
+.button-service:focus:not(.button-service-active) {
   background-color: var(--basic-dark-blue);
 }
 
