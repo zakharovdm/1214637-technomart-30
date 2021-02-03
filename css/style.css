@@ -568,6 +568,14 @@ img {
   border-color: var(--basic-red);
 }
 
+/* description */
+
+.description {
+  background-color: var(--basic-light-grayish-blue);
+}
+
+
+
 /* titles */
 
 .wrap-title {
@@ -588,8 +596,8 @@ img {
   text-transform: uppercase;
 }
 
-
-.title-services {
+.title-services,
+.title-description {
   color: var(--basic-black);
 }
 
