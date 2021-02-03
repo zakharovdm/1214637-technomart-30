@@ -59,13 +59,13 @@
       <nav class="site-navigation">
         <ul class="site-nav-list">
           <li class="site-nav-item">
-            <a>Главная</a>
+            <a class="site-nav-link" href="index.html">Главная</a>
           </li>
           <li class="site-nav-item">
             <a class="site-nav-link" href="#">Компания</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-link" href="catalog.html">Каталог</a>
+            <a class="site-nav-link" href="#">Каталог</a>
           </li>
           <li class="site-nav-item">
             <a class="site-nav-link" href="#">Новости</a>
@@ -84,94 +84,100 @@
     </div>
   </header>
 
-  <main>
-    <h1>Перфораторы</h1>
-    <ul>
-      <li>
+  <main class="container">
+    <div class="wrap-title wrap-title-catalog">
+      <h1 class="title">Перфораторы</h1>
+    </div>
+    <ul class="breadcrumbs-list">
+      <li class="breadcrumbs-item">
         <a href="index.html">Главная</a>
       </li>
-      <li>
+      <li class="breadcrumbs-item">
         <a href="#">Каталог</a>
       </li>
-      <li>
+      <li class="breadcrumbs-item">
         <a href="#">Инструмент</a>
       </li>
-      <li>
-        Перфораторы
+      <li class="breadcrumbs-item">
+        <a>Перфораторы</a>
       </li>
     </ul>
 
-    <section>
-      <h2>Фильтр:</h2>
+    <section class="filter">
+      <div class="inner-filter">
+        <h2>Фильтр:</h2>
+      </div>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
-          <legend>Цена:</legend>
+          <legend class="filter-title">Цена:</legend>
           <label for="price">Цена</label>
           <input type="range" min="0" max="30000" step="100" value="10000" name="price-field" id="price">
           <div>0</div>
           <div>30000</div>
         </fieldset>
         <fieldset>
-          <legend>Производители:</legend>
-          <ul>
-            <li>
+          <legend class="filter-title">Производители:</legend>
+          <ul class="filter-list">
+            <li class="filter-item">
               <input type="checkbox" name="bosch" id="filter-bosch" checked>
               <label for="filter-bosch">BOSCH</label>
             </li>
-            <li>
+            <li class="filter-item" >
               <input type="checkbox" name="interscol" id="filter-interscol">
               <label for="filter-interscol">Интерскол</label>
             </li>
-            <li>
+            <li class="filter-item">
               <input type="checkbox" name="makita" id="filter-makita" checked>
               <label for="filter-makita">Makita</label>
             </li>
-            <li>
+            <li class="filter-item">
               <input type="checkbox" name="dewalt" id="filter-dewalt">
               <label for="filter-dewalt">Dewalt</label>
             </li>
-            <li>
+            <li class="filter-item">
               <input type="checkbox" name="hitachi" id="filter-hitachi">
               <label for="filter-hitachi">Hitachi</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Питание:</legend>
-          <ul>
-            <li>
+          <legend class="filter-title">Питание:</legend>
+          <ul class="filter-list">
+            <li class="filter-item">
               <input type="radio" name="power-group" id="filter-battery" value="battery" checked>
-              <label for="filter-battery">Аккумуляторные</label>
+              <label  for="filter-battery">Аккумуляторные</label>
             </li>
-            <li>
+            <li class="filter-item">
               <input type="radio" name="power-group" id="filter-network" value="network">
               <label for="filter-battery">Сетевые</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button-filter" type="submit">Показать</button>
       </form>
     </section>
 
-    <section>
-      <h2>Сортировка</h2>
-      <ul>
-        <li>
-          <a href="#">По цене</a>
-        </li>
-        <li>
-          <a href="#">По типу</a>
-        </li>
-        <li>
-          <a href="#">По функционалу</a>
-        </li>
-        <li>
-          <a href="#">По возрастающей</a>
-        </li>
-        <li>
-          <a href="#">По убывающей</a>
-        </li>
-      </ul>
+    <section class="sorting">
+      <div class="inner-sorting">
+        <h2>Сортировка</h2>
+        <ul class="sorting-list">
+          <li class="sorting-item sorting-item-active">
+            <a href="#">По цене</a>
+          </li>
+          <li class="sorting-item">
+            <a href="#">По типу</a>
+          </li>
+          <li class="sorting-item">
+            <a href="#">По функционалу</a>
+          </li>
+          <li class="sorting-item">
+            <a href="#">По возрастающей</a>
+          </li>
+          <li class="sorting-item">
+            <a href="#">По убывающей</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section>
