@@ -162,6 +162,11 @@ img {
   background-color: var(--basic-red);
   width: 220px;
   min-height: 42px;
+  text-align: center;
+}
+
+.header-logo img {
+  padding-top: 13px;
 }
 
 .logo-catalog:active {
@@ -598,6 +603,15 @@ img {
   grid-row: 1/-1;
 }
 
+.slide-description {
+  display: flex;
+}
+
+.slide-text {
+  min-width: 300px;
+  margin-left: 80px;
+}
+
 .button-service {
   width: 240px;
   min-height: 61px;
@@ -621,6 +635,11 @@ img {
 }
 
 /* about */
+
+.about h2,
+.contacts h2 {
+  margin-top: 70px;
+}
 
 .about-wrapper {
   display: grid;
@@ -777,6 +796,21 @@ img {
   margin-bottom: 20px;
 }
 
+.wrap-title-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-main {
+  margin-left: 28px;
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+
+.button-main {
+  margin-right: 14px;
+}
+
 .wrap-title-catalog {
   background-color: var(--basic-high-grayish-blue);
 }
@@ -829,11 +863,27 @@ img {
 /* buttons */
 
 .button {
+  display: inline-block;
+  min-width: 192px;
+  text-align: center;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  margin-top: 25px;
+  margin-bottom: 26px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+.button-about {
+  width: 220px;
+  margin-bottom: 70px;
+}
+
+.button-contacts {
+  width: 300px;
 }
 
 .button:hover,
@@ -861,6 +911,12 @@ img {
   background-color: var(--basic-red);
   width: 220px;
   padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+.footer-inner-contacts {
+  width: 321px;
+  margin-bottom: 54px;
 }
 
 .footer-nav {
@@ -870,6 +926,10 @@ img {
 .footer-address,
 .footer-phone-number{
   color: var(--basic-less-grayish-blue);
+}
+
+.footer-address {
+  margin-bottom: 0;
 }
 
 .footer-nav-list,
@@ -906,10 +966,16 @@ img {
   display: grid;
   grid-template-columns: 240px 1fr 300px;
   column-gap: 150px;
+  justify-content: center;
 }
 
 .inner-feedback {
-  justify-self: end;
+  display: flex;
+  margin-left: 118px;
+}
+
+.creator {
+  margin-left: 51px;
 }
 
 .footer-nav-link:hover,
@@ -930,6 +996,7 @@ img {
 
 .footer-wrap-bottom {
   background-color: var(--basic-dark-blue);
+  min-height: 107px;
 }
 
 .copy,
