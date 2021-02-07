@@ -84,6 +84,7 @@
 /* Global */
 
 .page-body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -92,6 +93,11 @@
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -103,16 +109,42 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+/* container */
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 /* Main header */
 
 .header-wrap-top {
   background-color: var(--basic-dark-blue);
 }
 
+.header-inner-top {
+  display: grid;
+  grid-template-columns: 220px 1fr max-content;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.header-bookmark,
+.header-basket {
+  margin: 0 20px;
+}
+
 .header-inner-logo {
   background-color: var(--basic-red);
   width: 220px;
-  padding: 12px 0 12px 0;
+  min-height: 42px;
 }
 
 .logo-catalog:active {
@@ -134,7 +166,11 @@ img {
 }
 
 .button-order {
+  display: inline-block;
   background-color: var(--basic-green);
+  text-align: center;
+  width: 150px;
+  padding: 9px 0 9px 0;
 }
 
 .button-order:hover,
@@ -158,13 +194,29 @@ img {
 
 .header-wrap-middle {
   background-color: var(--basic-light-grayish-blue);
+  padding-bottom: 60px;
+}
+
+.header-inner-middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
 }
 
 .main-title {
+  width: 197px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
+  margin-bottom: 45px;
+  margin-top: 37px;
+  margin-left: 31px;
+}
+
+.header-inner-login {
+  justify-self: end;
+
 }
 
 .header-phone-number {
@@ -180,10 +232,18 @@ img {
 }
 
 .button-login {
+  display: inline-block;
+  width: 150px;
   color: var(--basic-black);
   background-color: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
+  padding: 12px 0 12px 0;
+}
+
+.button-signin {
+  width: 121px;
 }
 
 .button-login:hover,
@@ -223,19 +283,36 @@ img {
 }
 
 .site-nav-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.site-nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .site-nav-link {
+  display: inline-block;
   color: var(--basic-white);
+  padding: 0 28px;
+  margin-top: 16px;
+  margin-bottom: 20px;
 }
 
 .site-nav-item {
-  width: 122px;
-  padding: 16px 0 16px 0;
+  text-align: center;
 }
+
+.site-nav-item:first-child {
+  margin-left: 20px;
+}
+
+.site-nav-item:last-child {
+  margin-right: 20px;
+}
+
 
 .site-nav-item:hover,
 .site-nav-item:focus {
