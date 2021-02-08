@@ -600,7 +600,7 @@ img {
 
 .slider-area-services {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 240px 1fr;
   column-gap: 80px;
 }
 
@@ -619,7 +619,6 @@ img {
 
 .slide-text {
   min-width: 300px;
-  margin-left: 80px;
 }
 
 .button-service {
