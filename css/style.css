@@ -495,7 +495,6 @@ img {
 .goods {
   grid-column: 2 / -1;
   grid-row: 2 / 3;
-  margin-left: 20px;
 }
 
 .goods-list {
@@ -687,6 +686,7 @@ img {
   display: grid;
   grid-template-columns: 220px 1fr;
   grid-template-rows: 90px 1fr;
+  column-gap: 20px;
 }
 
 /* filter, sorting */
@@ -717,7 +717,6 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 700px;
-  margin-left: 20px;
   padding-bottom: 0;
 }
 
@@ -910,8 +909,7 @@ img {
 
 .breadcrumbs-list {
   display: flex;
-  justify-content: space-between;
-  width: 357px;
+  justify-content: start;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -925,6 +923,11 @@ img {
   color: var(--basic-black);
   text-transform: uppercase;
   margin-top: 21px;
+}
+
+.breadcrumbs-item {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
