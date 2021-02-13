@@ -163,7 +163,7 @@ img {
   text-align: center;
   width: 136px;
   padding: 9px 0 9px 0;
-
+  position: relative;
 }
 
 .header-inner-logo {
@@ -171,6 +171,18 @@ img {
   width: 220px;
   min-height: 42px;
   text-align: center;
+  position: relative;
+}
+
+.header-inner-logo::before {
+  content: "";
+  background-color: var(--basic-red);
+  width: 220px;
+  min-height: 10px;
+  box-shadow: inset 0px -5px 0px rgba(var(--basic-black-rgb), 0.24);
+  position: absolute;
+  top: 37px;
+  right: 0px;
 }
 
 .header-logo img {
@@ -181,14 +193,46 @@ img {
   background-color: var(--basic-strong-red);
 }
 
+.header-inner-search  {
+  position: relative;
+}
+
+.header-form-search label {
+  margin-left: 20px;
+  position: absolute;
+  right: 200px;
+}
+
+.header-form-search label::before {
+  content: "";
+  position: absolute;
+  left: -23px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons/icon-search.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
 .header-form-search input {
   background-color: transparent;
   border: none;
+  margin-left: 60px;
 }
 
 .header-form-input:hover,
 .header-form-input:focus {
   background-color: var(--basic-white);
+}
+
+.header-form-input:hover + label::before,
+.header-form-input:focus + label::before {
+  opacity: 1;
+}
+
+.header-form-input:active + label::before {
+  background-image: url(../img/icons/icon-search-red.svg)
 }
 
 .header-inner-user-block {
@@ -219,7 +263,38 @@ img {
 .header-bookmark:active,
 .header-basket:active {
   background-color: var(--basic-mostly-black);
-  color: rgba(var(--basic-white-rgb), 0.5);
+  opacity: 0.3;
+}
+
+.header-bookmark:hover::before,
+.header-bookmark:focus::before,
+.header-basket:hover::before,
+.header-basket:focus::before {
+  opacity: 1;
+}
+
+.header-bookmark::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 4px;
+  bottom: 10px;
+  background-image: url(../img/icons/icon-bookmark.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.header-basket::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 8px;
+  bottom: 10px;
+  background-image: url(../img/icons/icon-cart.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .basket-complete {
@@ -254,15 +329,37 @@ img {
 }
 
 .header-phone-number {
+  display: block;
+  width: 270px;
+  min-height: 45px;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-red);
+  border: 3px solid var(--basic-white);
+  box-sizing: border-box;
+  padding-left: 74px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.header-phone-number::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 35px;
+  top: 10px;
+  background-image: url(../img/icons/icon-phone.svg);
+  background-repeat: no-repeat;
 }
 
 .header-address {
   font-size: 14px;
   color: var(--basic-medium-dark-blue);
+  margin-top: 3px;
+  margin-left: 10px;
 }
 
 .button-login {
@@ -277,7 +374,21 @@ img {
 }
 
 .button-signin {
-  width: 121px;
+  width: 50px;
+  position: relative;
+  padding-left: 45px;
+  padding-right: 27px;
+}
+
+.button-signin::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons/icon-login.svg);
+  background-repeat: no-repeat;
 }
 
 .button-login:hover,
@@ -287,6 +398,15 @@ img {
 
 .button-login:active {
   color: var(--basic-light-gray);
+}
+
+.button-signin:hover::before,
+.button-signin:focus::before{
+  background-image: url(../img/icons/icon-login-dark.svg);
+}
+
+.button-signin:active::before {
+  background-image: url(../img/icons/icon-login.svg);
 }
 
 .login-name a {
