@@ -1030,6 +1030,7 @@ img {
 .about h2,
 .contacts h2 {
   margin-top: 70px;
+  margin-left: 0;
 }
 
 .about-wrapper {
@@ -1040,10 +1041,27 @@ img {
 
 .about-list {
   list-style: none;
+  margin-top: 0
 }
 
 .about-item {
   color: var(--basic-black);
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.about-item:before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 10px;
+  width: 25px;
+  height: 3px;
+  background-color: var(--basic-red);
+}
+
+.contacts .text {
+  margin-bottom: 32px;
 }
 
 /* catalog */
@@ -1291,6 +1309,10 @@ img {
   margin-bottom: 70px;
 }
 
+.text-about {
+  margin-bottom: 20px;
+}
+
 /* breadcrumbs */
 
 .breadcrumbs-list {
@@ -1341,6 +1363,7 @@ img {
 
 .button-contacts {
   width: 300px;
+  margin-top: 35px;
 }
 
 .button:hover,
@@ -1367,8 +1390,13 @@ img {
 .footer-inner-logo {
   background-color: var(--basic-red);
   width: 220px;
-  padding: 20px 0 20px 0;
+  min-height: 68px;
   text-align: center;
+  box-shadow: inset 0px -5px 0px rgba(var(--basic-black-rgb), 0.24);
+}
+
+.footer-logo img {
+  padding-top: 20px;
 }
 
 .footer-inner-contacts {
@@ -1387,6 +1415,7 @@ img {
 
 .footer-address {
   margin-bottom: 0;
+  margin-top: 22px;
 }
 
 .footer-nav-list,
@@ -1395,6 +1424,46 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 140px;
+  margin-top: 34px;
+}
+
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--basic-dark-desaturated-blue);
+}
+
+.social-item:nth-child(1) .social-link {
+  background-image: url(../img/icons/icon-vk1.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-item:nth-child(2) .social-link {
+  background-image: url(../img/icons/icon-fb.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-item:nth-child(3) .social-link {
+  background-image: url(../img/icons/icon-insta.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-link:active {
+  background-color: var(--basic-red);
 }
 
 .footer-nav-list {
@@ -1422,7 +1491,7 @@ img {
 .footer-inner-bottom {
   display: grid;
   grid-template-columns: 240px 1fr 300px;
-  column-gap: 150px;
+  column-gap: 135px;
   justify-content: center;
 }
 
@@ -1471,6 +1540,16 @@ img {
 .creator a:active {
   color: var(--basic-red);
   text-decoration: none;
+}
+
+.copy,
+.footer-feedback,
+.creator {
+  margin-top: 36px;
+}
+
+.copy {
+  padding-left: 5px;
 }
 
 /* modal */
