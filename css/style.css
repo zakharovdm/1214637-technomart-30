@@ -875,6 +875,15 @@ img {
   border: 1px solid var(--basic-very-light-gray);
 }
 
+.manufacturers-item:hover,
+.manufacturers-item:focus {
+  box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), 0.15);
+}
+
+.manufacturers-item:active {
+  opacity: 0.4;
+}
+
 /* services */
 
 .services {
