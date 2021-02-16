@@ -853,7 +853,7 @@ img {
   background-color: var(--basic-white);
   width: 180px;
   min-height: 100px;
-  /*display: none;*/
+  display: none;
 }
 
 .goods-item:hover .inner-button-goods,
@@ -1586,6 +1586,10 @@ img {
 }
 
 /* modal */
+
+.modal {
+  display: none;
+}
 
 .inner-modal-button {
   width: 620px;
