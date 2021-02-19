@@ -227,7 +227,7 @@ img {
   border: none;
   width: 240px;
   height: 42px;
-  padding-left: 45px;
+  padding-left: 43px;
 }
 
 .header-form-search input::placeholder {
@@ -339,7 +339,7 @@ img {
 
 .header-inner-login {
   justify-self: end;
-  margin-top: 10px;
+  margin-bottom: 24px;
 }
 
 .login-name-link {
@@ -390,7 +390,7 @@ img {
 }
 
 .header-inner-contacts {
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .header-phone-number {
@@ -546,7 +546,7 @@ img {
 .site-nav-link {
   display: inline-block;
   color: var(--basic-white);
-  padding: 0 23px;
+  padding: 0 27px;
   margin-top: 16px;
   margin-bottom: 20px;
 }
@@ -823,7 +823,7 @@ img {
 
 .goods-item {
   position: relative;
-  width: 216px;
+  width: 218px;
   border: 1px solid var(--basic-very-light-gray);
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -838,12 +838,13 @@ img {
   margin-left: 18px;
   margin-right: 18px;
   margin-bottom: 0;
-  margin-top: 5px;
+  margin-top: 3px;
   font-size: 18px;
 }
 
 .goods-item img {
-  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-right: 7px;
 }
 
 .goods-item:hover,
@@ -867,7 +868,7 @@ img {
   background-image: url(../img/price-background.svg);
   background-repeat: no-repeat;
   padding: 10px 44px 10px 0;
-  margin-top: 7px;
+  margin-top: 10px;
   margin-left: 45px;
   margin-bottom: 21px;
 }
@@ -977,10 +978,14 @@ img {
 }
 
 .manufacturers-item {
-  width: 216px;
-  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 218px;
+  min-height: 143px;
+  padding: 1px 0;
   border: 1px solid var(--basic-very-light-gray);
-}
+ }
 
 .manufacturers-item:hover,
 .manufacturers-item:focus {
@@ -1089,6 +1094,7 @@ img {
 .btn-middle-forward {
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .btn-middle-back::before {
@@ -1100,6 +1106,7 @@ img {
   left: 25px;
   background-image: url(../img/icons/icon-arrow.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .btn-middle-forward::before {
@@ -1112,6 +1119,7 @@ img {
   background-image: url(../img/icons/icon-arrow.svg);
   background-repeat: no-repeat;
   transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .btn-bottom {
@@ -1122,6 +1130,7 @@ img {
   background-color: var(--basic-white);
   border: 2px solid var(--basic-white);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .btn-bottom-back {
@@ -1144,6 +1153,7 @@ img {
 .contacts h2 {
   margin-top: 70px;
   margin-left: 0;
+  margin-bottom: 25px;
 }
 
 .about-wrapper {
@@ -1154,7 +1164,8 @@ img {
 
 .about-list {
   list-style: none;
-  margin-top: 5px;
+  margin-top: 4px;
+  padding-left: 35px;
 }
 
 .about-item {
@@ -1166,9 +1177,10 @@ img {
 .about-item:before {
   content: "";
   position: absolute;
-  left: -40px;
-  top: 13px;
+  left: -35px;
+  top: 11px;
   width: 25px;
+  height: 2px;
   background-color: var(--basic-red);
 }
 
@@ -1371,6 +1383,10 @@ img {
   margin-right: 14px;
 }
 
+.button-manufacturers {
+  margin-right: 19px;
+}
+
 .wrap-title-catalog {
   background-color: var(--basic-high-grayish-blue);
 }
@@ -1386,15 +1402,11 @@ img {
   margin-bottom: 30px;
 }
 
-.title-services,
-.title-description {
-  color: var(--basic-black);
-  padding-top: 60px;
-  margin-left: 0;
-}
-
 .title-services {
-  margin-bottom: 20px;
+  color: var(--basic-black);
+  padding-top: 65px;
+  margin-bottom: 21px;
+  margin-left: 0;
 }
 
 .slide-title {
@@ -1418,11 +1430,11 @@ img {
 
 .text-services {
   width: 394px;
-  margin-bottom: 70px;
+  margin-bottom: 72px;
 }
 
 .text-about {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* breadcrumbs */
@@ -1470,13 +1482,13 @@ img {
 
 .button-about {
   width: 220px;
-  margin-top: 5px;
+  margin-top: 1px;
   margin-bottom: 70px;
 }
 
 .button-contacts {
   width: 300px;
-  margin-top: 15px;
+  margin-top: 19px;
 }
 
 .button:hover,
@@ -1544,7 +1556,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 140px;
-  margin-top: 28px;
+  margin-top: 30px;
   margin-left: 30px;
 }
 
@@ -1590,8 +1602,9 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 58px;
-  margin-top: 38px;
+  margin-top: 35px;
   margin-bottom: 74px;
+  margin-left: 15px;
 }
 
 .footer-nav-link {
