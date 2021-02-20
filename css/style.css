@@ -332,6 +332,7 @@ img {
   width: 197px;
   font-style: italic;
   font-size: 16px;
+  font-weight: 400;
   line-height: 23px;
   color: var(--basic-red);
   margin-bottom: 47px;
@@ -485,6 +486,7 @@ img {
   text-align: center;
   padding-top: 11px;
   padding-bottom: 11px;
+  margin-top: 25px;
 }
 
 .login-name a {
@@ -531,6 +533,7 @@ img {
 
 .site-navigation {
   background-color: var(--basic-medium-dark-blue);
+  box-shadow: inset 0px -5px 0px var(--basic-dark-blue);
   width: 920px;
 }
 
@@ -1073,6 +1076,7 @@ img {
   font-weight: 700;
   text-align: start;
   padding-left: 22px;
+  padding-bottom: 5px;
   border: none;
   color: var(--basic-white);
   background-color: var(--basic-medium-dark-blue);
@@ -1180,7 +1184,7 @@ img {
   content: "";
   position: absolute;
   left: -35px;
-  top: 11px;
+  top: 9px;
   width: 25px;
   height: 2px;
   background-color: var(--basic-red);
@@ -1270,11 +1274,28 @@ img {
   margin: 0;
 }
 
+.sorting-item:not(.trg-item) {
+  border-bottom: 1px dotted var(--basic-red);
+  margin-right: 10px;
+}
+
+.sorting-down-link svg {
+  transform: rotate(180deg);
+  margin-left: -15px;
+  margin-right: 25px;
+}
+
+.sorting-item:nth-child(4) {
+  margin-left: 20px;
+}
+
 .sorting-item a {
   color: rgba(var(--basic-black-rgb),0.3);
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: var(--basic-red);
+}
+
+.sorting-item:hover:not(.trg-item),
+.sorting-item:focus:not(.trg-item) {
+  border-bottom-style: solid;
 }
 
 .sorting-item a:hover,
@@ -1282,9 +1303,21 @@ img {
   color: var(--basic-black);
 }
 
+.sorting-trg-link path:hover,
+.sorting-trg-link path:focus {
+  fill: var(--basic-black);
+}
+
+.trg-active path {
+  fill: var(--basic-red);
+}
+
+.sorting-item-active {
+  border-bottom: none;
+}
+
 .sorting-item-active a {
   color: var(--basic-red);
-  text-decoration: none;
 }
 
 .filter-title,
@@ -1600,19 +1633,19 @@ img {
 }
 
 .social-item:nth-child(1) .social-link {
-  background-image: url(../img/icons/icon-vk1.png);
+  background-image: url(../img/icons/icon-vk.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social-item:nth-child(2) .social-link {
-  background-image: url(../img/icons/icon-fb.png);
+  background-image: url(../img/icons/icon-fb.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social-item:nth-child(3) .social-link {
-  background-image: url(../img/icons/icon-insta.png);
+  background-image: url(../img/icons/icon-insta.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
