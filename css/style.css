@@ -163,7 +163,7 @@ img {
   display: block;
   text-align: center;
   width: 136px;
-  padding: 12px 0 9px 0;
+  padding: 10px 0 8px 0;
   position: relative;
 }
 
@@ -228,6 +228,8 @@ img {
   width: 240px;
   height: 42px;
   padding-left: 43px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .header-form-search input::placeholder {
@@ -262,7 +264,7 @@ img {
   background-color: var(--basic-green);
   text-align: center;
   width: 150px;
-  padding: 10px 0 10px 0;
+  padding: 8px 0 8px 0;
 }
 
 .button-order:hover,
@@ -332,8 +334,8 @@ img {
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
-  margin-bottom: 45px;
-  margin-top: 45px;
+  margin-bottom: 47px;
+  margin-top: 43px;
   margin-left: 31px;
 }
 
@@ -1483,7 +1485,7 @@ img {
 .button-about {
   width: 220px;
   margin-top: 1px;
-  margin-bottom: 70px;
+  margin-bottom: 68px;
 }
 
 .button-contacts {
