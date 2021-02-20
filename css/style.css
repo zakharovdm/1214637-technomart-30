@@ -1462,6 +1462,35 @@ img {
 .breadcrumbs-item {
   margin-left: 20px;
   margin-right: 20px;
+  position: relative;
+}
+
+.breadcrumbs-item:first-child::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 12px;
+  top: 5px;
+  left: -20px;
+  background-image: url(../img/icons/icon-home.svg);
+}
+
+.breadcrumbs-item::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  top: 5px;
+  right: -25px;
+  background-image: url(../img/icons/icon-right-small.svg);
+}
+
+.breadcrumbs-item:first-child::after {
+  right: -20px;
+}
+
+.breadcrumbs-item:last-child::after {
+  display: none;
 }
 
 
