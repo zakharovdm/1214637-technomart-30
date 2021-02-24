@@ -410,24 +410,31 @@
     </div>
   </footer>
 
-  <section class="modal">
-    <h2>Обратная связь</h2>
-    <button class="modal-close" type="button">Закрыть</button>
+  <section class="modal modal-feedback">
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
     <form class="form-modal" action="https://echo.htmlacademy.ru" method="post">
-      <p class="modal-name">
-        <label class="modal-caption-name" for="name-field">Ваше имя:</label><br>
-        <input class="field modal-name-field" type="text" id="name-field" name="user-name" placeholder="Имя Фамилия">
-      </p>
-      <p class="modal-email">
-        <label class="modal-caption-email" for="email-field">Ваш e-mail:</label><br>
-        <input class="field modal-email-field" type="email" id="email-field" name="user-email" placeholder="email@example.com">
-      </p>
-      <label class="modal-caption-message" for="message-field">Текст письма:</label><br>
-      <textarea class="field modal-message-field" id="message-field" name="user-message">В свободной форме</textarea>
+      <div class="inner-modal">
+        <p class="modal-name">
+          <label class="modal-caption-name" for="name-field">Ваше имя:</label><br>
+          <input class="field modal-name-field" type="text" id="name-field" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal-email">
+          <label class="modal-caption-email" for="email-field">Ваш e-mail:</label><br>
+          <input class="field modal-email-field" type="email" id="email-field" name="user-email" placeholder="email@example.com">
+        </p>
+        <p class="modal-message">
+          <label class="modal-caption-message" for="message-field">Текст письма:</label><br>
+          <textarea class="field modal-message-field" id="message-field" name="user-message">В свободной форме</textarea>
+        </p>
+      </div>
       <div class="inner-modal-button">
         <button class="button button-modal" type="submit">Отправить</button>
       </div>
     </form>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Карта</h2>
   </section>
 </body>
 </html>
