@@ -829,7 +829,7 @@ img {
 
 .goods-list-catalog {
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 44px;
+  margin-bottom: 48px;
 }
 
 .goods-item {
@@ -1214,7 +1214,7 @@ img {
 .catalog-wrapper {
   display: grid;
   grid-template-columns: 220px 1fr;
-  grid-template-rows: 90px 1fr;
+  grid-template-rows: 86px 1fr;
   column-gap: 20px;
 }
 
@@ -1243,7 +1243,7 @@ img {
 }
 
 .manufacturers-filter .filter-title {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .price-filter,
@@ -1256,7 +1256,7 @@ img {
   position: absolute;
   height: 1px;
   width: 220px;
-  top: 160px;
+  top: 162px;
   left: 0;
   background-color: var(--basic-very-light-gray);
 }
@@ -1266,7 +1266,7 @@ img {
   position: absolute;
   height: 1px;
   width: 220px;
-  top: 204px;
+  top: 206px;
   left: 0;
   background-color: var(--basic-very-light-gray);
 }
@@ -1805,7 +1805,7 @@ img {
 .footer-inner-top {
   display: grid;
   grid-template-columns: 320px 1fr;
-  column-gap: 80px;
+  column-gap: 77px;
 }
 
 .footer-inner-logo {
@@ -1836,7 +1836,7 @@ img {
 
 .footer-address {
   margin-bottom: 0;
-  margin-top: 22px;
+  margin-top: 23px;
 }
 
 .footer-nav-list,
@@ -1968,7 +1968,7 @@ img {
 .copy,
 .footer-feedback,
 .creator {
-  margin-top: 36px;
+  margin-top: 35px;
 }
 
 .copy {
