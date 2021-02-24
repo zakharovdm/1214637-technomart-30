@@ -1977,10 +1977,6 @@ img {
 
 /* modal */
 
-.modal-map {
-  display: none;
-}
-
 .modal {
   position: fixed;
   top: 0;
@@ -2021,6 +2017,23 @@ img {
   cursor: pointer;
 }
 
+.modal-map {
+  display: none;
+  width: 943px;
+  height: 449px;
+}
+
+.modal-map iframe {
+  border: none;
+}
+
+.modal-map-block {
+  position: absolute;
+  top: 0;
+  width: 943px;
+  height: 7px;
+  background-color: var(--basic-red);
+}
 
 .inner-modal-button {
   width: 620px;
