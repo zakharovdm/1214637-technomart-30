@@ -939,7 +939,7 @@ img {
 
 .inner-button-goods {
   position: absolute;
-  top: 38px;
+  top: 37px;
   background-color: var(--basic-white);
   width: 200px;
   min-height: 125px;
@@ -2143,4 +2143,10 @@ img {
   height: 66px;
   background-image: url(../img/icons/icon-mark.svg);
   background-repeat: no-repeat;
+}
+
+/* helpers */
+
+::-moz-placeholder, :-moz-placeholder {
+    opacity: 1;
 }
