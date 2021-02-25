@@ -1992,7 +1992,8 @@ img {
 
 .modal-feedback {
   display: none;
-  top: 180px;
+  top: 50%;
+  margin-top: -215px;
   bottom: auto;
 }
 
@@ -2023,6 +2024,8 @@ img {
   display: none;
   width: 943px;
   height: 449px;
+  top: 50%;
+  margin-top: -225px;
 }
 
 .modal-map iframe {
@@ -2039,7 +2042,8 @@ img {
 
 .modal-notice {
   display: none;
-  top: 250px;
+  top: 50%;
+  margin-top: -141px;
   bottom: auto;
 }
 
