@@ -50,7 +50,6 @@
   --basic-less-grayish-blue: #F3F7F9;
   --basic-high-grayish-blue: #F2F6F8;
   --basic-gray-blue: #D7DCDE;
-  --basic-grayish-blue: #C1C6CE;
   --basic-dark-blue: #293449;
   --basic-medium-dark-blue: #32425C;
   --basic-dark-desaturated-blue: #212A3A;
@@ -82,7 +81,6 @@
   --basic-high-light-gray: #E5E5E5;
   --basic-grayish-orange: #F7F3EC;
   --basic-very-light-gray: #EAEAEA;
-  --basic-very-high-light-gray: #F1F1F1;
   --basic-high-gray: #B5B5B5;
 }
 
@@ -170,6 +168,7 @@ img {
   padding: 10px 0 8px 0;
 
   text-align: center;
+  outline: none;
 }
 
 .header-bookmark {
@@ -280,6 +279,7 @@ img {
   text-align: center;
 
   background-color: var(--basic-green);
+  outline: none;
 }
 
 .button-order:hover,
@@ -477,6 +477,7 @@ img {
   color: var(--basic-black);
 
   background-color: var(--basic-white);
+  outline: none;
 }
 
 .button-signin {
@@ -563,6 +564,8 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-medium-dark-blue);
+
+  outline: none;
 }
 
 .login-control a:hover,
@@ -615,9 +618,12 @@ img {
   margin-right: 20px;
 }
 
+.site-nav-item a {
+  outline: none;
+}
 
 .site-nav-item:hover,
-.site-nav-item:focus {
+.site-nav-item:focus-within {
   background-color: var(--basic-dark-blue);
 }
 
@@ -687,6 +693,7 @@ img {
   text-transform: uppercase;
 
   background-color: rgba(var(--basic-white-rgb), 0.3);
+  outline: none;
 }
 
 .product-link:hover,
@@ -907,6 +914,7 @@ img {
   text-align: center;
 
   border: 1px solid var(--basic-very-light-gray);
+  outline: none;
 }
 
 .goods-item h3 {
@@ -984,6 +992,7 @@ img {
   background-color: var(--basic-green);
   border-radius: 2px;
   box-shadow: inset 0px -3px 0px var(--basic-very-dark-green);
+  outline: none;
 }
 
 .button-buy::before {
@@ -1018,13 +1027,14 @@ img {
 
   border: 3px solid var(--basic-green);
   box-sizing: border-box;
+  outline: none;
 }
 
 .inner-button-goods {
   position: absolute;
   top: 37px;
 
-  display: none;
+  visibility: hidden;
   width: 200px;
   min-height: 125px;
 
@@ -1032,8 +1042,8 @@ img {
 }
 
 .goods-item:hover .inner-button-goods,
-.goods-item:focus .inner-button-goods {
-  display: block;
+.goods-item:focus-within .inner-button-goods {
+  visibility: visible;
 }
 
 .button-bookmark:hover,
@@ -1087,8 +1097,12 @@ img {
   border: 1px solid var(--basic-very-light-gray);
  }
 
+.manufacturers-item a {
+  outline: none;
+}
+
 .manufacturers-item:hover,
-.manufacturers-item:focus {
+.manufacturers-item:focus-within {
   box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), 0.15);
 }
 
@@ -1187,6 +1201,7 @@ img {
   box-shadow: 0px 1px 0px var(--basic-dark-blue),
               inset 0px 1px 0px var(--basic-very-dark-blue);
   cursor: pointer;
+  outline: none;
 }
 
 .button-service-active {
@@ -1236,6 +1251,11 @@ img {
   background-repeat: no-repeat;
   transform: rotate(180deg);
   cursor: pointer;
+}
+
+.btn-middle-back:focus::before,
+.btn-middle-forward:focus::before {
+  border: 1px solid var(--basic-black);
 }
 
 .btn-bottom {
@@ -1295,7 +1315,7 @@ img {
   color: var(--basic-black);
 }
 
-.about-item:before {
+.about-item::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -1951,6 +1971,7 @@ img {
   text-align: center;
 
   background-color: var(--basic-red);
+  outline: none;
 }
 
 .button-about {
@@ -2043,6 +2064,7 @@ img {
 
   border-radius: 50%;
   background-color: var(--basic-dark-desaturated-blue);
+  outline: none;
 }
 
 .social-item:nth-child(1) .social-link {
@@ -2086,10 +2108,14 @@ img {
 
 .footer-nav-link {
   color: var(--basic-light-grayish-blue);
+
+  outline: none;
 }
 
 .footer-category-link {
   color: var(--basic-high-light-orange);
+
+  outline: none;
 }
 
 .footer-inner-bottom {
@@ -2105,6 +2131,11 @@ img {
 
 .creator {
   margin-left: 51px;
+}
+
+.footer-feedback a,
+.creator a {
+  outline: none;
 }
 
 .footer-nav-link:hover,

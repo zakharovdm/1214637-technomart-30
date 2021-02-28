@@ -24,7 +24,7 @@
         <div class="header-inner-search">
           <form class="header-form-search" action="https://echo.htmlacademy.ru" method="get">
             <input id="search-field" class="header-form-input" type="text" name="search" placeholder="Поиск:">
-            <label for="search-field"></label>
+            <label for="search-field" aria-label="Поле поиска"></label>
           </form>
         </div>
 
@@ -140,17 +140,17 @@
         <a class="button button-main" href="blank.html">Все популярные товары</a>
       </div>
       <ul class="goods-list">
-        <li class="goods-item">
+        <li class="goods-item" tabindex="0">
           <img src="img/puncher-9000.jpg" width="184" height="164" alt="">
           <h3>Перфоратор BOSCH BFG 9000</h3>
           <p class="price old-price"><del>32500 Р.</del></p>
           <p class="price new-price">25500 Р.</p>
           <div class="inner-button-goods">
-            <a class="button-goods button-buy" href="blank.html">Купить</a>
+            <a class="button-goods button-buy"  href="blank.html">Купить</a>
             <a class="button-goods button-bookmark" href="blank.html">В закладки</a>
           </div>
         </li>
-        <li class="goods-item new-goods">
+        <li class="goods-item new-goods" tabindex="0">
           <img src="img/puncher-3000-2000.jpg" width="184" height="164" alt="">
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <p class="price old-price"><del>22500 Р.</del></p>
@@ -160,7 +160,7 @@
             <a class="button-goods button-bookmark" href="blank.html">В закладки</a>
           </div>
         </li>
-        <li class="goods-item">
+        <li class="goods-item" tabindex="0">
           <img src="img/puncher-6000.jpg" width="184" height="164" alt="">
           <h3>Перфоратор BOSCH BFG 6000</h3>
           <p class="price old-price"><del>30500 Р.</del></p>
@@ -170,7 +170,7 @@
             <a class="button-goods button-bookmark" href="blank.html">В закладки</a>
           </div>
         </li>
-        <li class="goods-item new-goods">
+        <li class="goods-item new-goods" tabindex="0">
           <img src="img/puncher-3000-2000.jpg" width="184" height="164" alt="">
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <p class="price old-price"><del>22500 Р.</del></p>
@@ -311,7 +311,7 @@
         <p class="text">Вы можете забрать товар сами,&nbsp;
         заехав в наш офис:</p>
         <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=16.49">
-          <img src="img/map.png" width="300" height="158" alt="Изображение карты">
+          <img src="img/map.png" width="300" height="158" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
         <a class="button button-contacts" href="blank.html">Заблудились? Напишите нам!</a>
       </section>
@@ -413,7 +413,7 @@
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    <form class="form-modal" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form-modal" action="https://echo.htmlacademy.ru" method="post" target="_blank">
       <div class="inner-modal">
         <p class="modal-name">
           <label class="modal-caption-name" for="name-field">Ваше имя:</label>
