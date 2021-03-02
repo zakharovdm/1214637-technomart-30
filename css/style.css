@@ -2212,15 +2212,6 @@ img {
   margin-top: -215px;
 }
 
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
-.modal-error {
-  animation: shake 0.6s;
-}
-
 .modal-feedback::after,
 .modal-notice::after {
   content: "";
@@ -2255,6 +2246,15 @@ img {
   width: 943px;
   height: 449px;
   margin-top: -225px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-map iframe {
