@@ -21,4 +21,4 @@ window.addEventListener("keydown", function(evt) {
       mapPopup.classList.remove("modal-show");
     }
   }
-})
+});
