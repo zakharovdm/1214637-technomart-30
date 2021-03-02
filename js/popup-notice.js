@@ -1,12 +1,13 @@
 const notice = document.querySelector(".modal-notice");
-const buttonBuy = document.querySelector(".button-buy");
+const buttonBuys = document.querySelectorAll(".button-buy");
 const noticeClose = notice.querySelector(".modal-close");
 
-
-buttonBuy.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  notice.classList.add("modal-show");
-});
+for (let buttonBuy of buttonBuys) {
+  buttonBuy.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    notice.classList.add("modal-show");
+  });
+}
 
 
 noticeClose.addEventListener("click", function() {
