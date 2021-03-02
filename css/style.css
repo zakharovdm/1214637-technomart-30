@@ -2212,7 +2212,14 @@ img {
   margin-top: -215px;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
 
+.modal-error {
+  animation: shake 0.6s;
+}
 
 .modal-feedback::after,
 .modal-notice::after {
@@ -2388,6 +2395,48 @@ img {
 
   background-image: url(../img/icons/icon-mark.svg);
   background-repeat: no-repeat;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(500px) translateX(500px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 /* helpers */
