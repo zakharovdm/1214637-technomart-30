@@ -13,6 +13,11 @@ const mapPopup = document.querySelector(".modal-map");
 const mapLink = document.querySelector(".map-link");
 const mapClose = mapPopup.querySelector(".modal-close");
 
+let btnMidBack = document.querySelector(".btn-middle-back");
+let btnMidForward = document.querySelector(".btn-middle-forward");
+let btnBottomBack = document.querySelector(".btn-bottom-back");
+let btnBottomForward = document.querySelector(".btn-bottom-forward");
+
 try {
   storageName = localStorage.getItem("name");
   storageEmail = localStorage.getItem("email");
@@ -79,3 +84,58 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
+
+function previousSlide() {
+    showSlides(slideIndex -= 1);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("btn-bottom");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" btn-current", "");
+    }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " btn-current";
+}
+
+btnMidBack.addEventListener("click", function() {
+  previousSlide();
+})
+
+btnMidForward.addEventListener("click", function() {
+  nextSlide();
+})
+
+btnBottomBack.addEventListener("click", function() {
+  currentSlide(1);
+})
+
+btnBottomForward.addEventListener("click", function() {
+  currentSlide(2);
+})
