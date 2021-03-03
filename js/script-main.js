@@ -5,10 +5,13 @@ const form = popup.querySelector(".form-modal");
 const name = popup.querySelector("[name=user-name]");
 const email = popup.querySelector("[name=user-email]");
 const message = popup.querySelector("[name=user-message]");
-
 let isStorageSupport = true;
 let storageName = "";
 let storageEmail = "";
+
+const mapPopup = document.querySelector(".modal-map");
+const mapLink = document.querySelector(".map-link");
+const mapClose = mapPopup.querySelector(".modal-close");
 
 try {
   storageName = localStorage.getItem("name");
@@ -16,7 +19,6 @@ try {
 } catch(err) {
   isStorageSupport = false;
 }
-
 
 button.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -31,12 +33,10 @@ button.addEventListener("click", function(evt) {
   }
 });
 
-
 close.addEventListener("click", function() {
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
 });
-
 
  form.addEventListener("submit", function(evt) {
   if (!name.value || !email.value || !message.value) {
@@ -52,7 +52,6 @@ close.addEventListener("click", function() {
   }
 });
 
-
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     if (popup.classList.contains("modal-show")){
@@ -62,3 +61,21 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 })
+
+mapLink.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function() {
+  mapPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")){
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    }
+  }
+});

@@ -2325,7 +2325,6 @@ img {
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
-  color: var(--basic-gray);
 
   border: 2px solid var(--basic-light-gray);
 }
@@ -2368,6 +2367,11 @@ img {
   background-color: var(--basic-white);
 }
 
+.button-modal-notice:hover,
+.button-modal-notice:focus {
+  color: var(--basic-white);
+}
+
 .button-modal-order {
   margin-top: 37px;
   margin-bottom: 37px;
@@ -2401,7 +2405,7 @@ img {
 
 @keyframes bounce {
   0% {
-    transform: translateY(500px) translateX(500px);
+    transform: translateY(-2000px);
   }
 
   70% {
