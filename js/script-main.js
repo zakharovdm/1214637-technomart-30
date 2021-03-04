@@ -13,10 +13,7 @@ const mapPopup = document.querySelector(".modal-map");
 const mapLink = document.querySelector(".map-link");
 const mapClose = mapPopup.querySelector(".modal-close");
 
-let btnMidBack = document.querySelector(".btn-middle-back");
-let btnMidForward = document.querySelector(".btn-middle-forward");
-let btnBottomBack = document.querySelector(".btn-bottom-back");
-let btnBottomForward = document.querySelector(".btn-bottom-forward");
+let slider = document.querySelector(".slider");
 
 try {
   storageName = localStorage.getItem("name");
@@ -112,11 +109,11 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
 
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
 
-  for (i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" btn-current", "");
     }
 
@@ -124,18 +121,19 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " btn-current";
 }
 
-btnMidBack.addEventListener("click", function() {
-  previousSlide();
-})
+slider.addEventListener("click", function(event) {
+  const target = event.target;
+  const id = target.id;
 
-btnMidForward.addEventListener("click", function() {
-  nextSlide();
-})
+  if (target.classList.contains("btn-middle-back")) {
+    previousSlide();
+  }
 
-btnBottomBack.addEventListener("click", function() {
-  currentSlide(1);
-})
+  if (target.classList.contains("btn-middle-forward")) {
+    nextSlide();
+  }
 
-btnBottomForward.addEventListener("click", function() {
-  currentSlide(2);
+  if (target.classList.contains("btn-bottom")) {
+    currentSlide(id);
+  }
 })

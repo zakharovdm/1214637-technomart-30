@@ -1242,27 +1242,26 @@ img {
   cursor: pointer;
 }
 
-.btn-bottom {
+.slider-control-bottom {
   position: absolute;
+  bottom: 38px;
+  left: 295px;
 
+  display: flex;
+  justify-content: space-between;
+  min-width: 32px;
+}
+
+.btn-bottom {
   width: 10px;
   height: 10px;
   padding: 0;
+  margin-right: 12px;
 
   background-color: var(--basic-white);
   border: 2px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
-}
-
-.btn-bottom-back {
-  left: 295px;
-  bottom: 38px;
-}
-
-.btn-bottom-forward {
-  left: 317px;
-  bottom: 38px;
 }
 
 .btn-current {
