@@ -1125,29 +1125,25 @@ img {
 }
 
 .slide-service {
+  position: relative;
+  display: none;
+
   grid-column: 1/-1;
   grid-row: 1/-1;
+}
+
+.slide-current {
+  display: block;
 }
 
 .slide-description {
   display: flex;
 }
 
-
-.slide-service {
-  position: relative;
-
-  display: none;
-}
-
 .slide-description img {
   position: absolute;
   right: 0;
   top: 23px;
-}
-
-.slide-service-current {
-  display: block;
 }
 
 .slide-text {

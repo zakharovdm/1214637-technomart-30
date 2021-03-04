@@ -15,6 +15,8 @@ const mapClose = mapPopup.querySelector(".modal-close");
 
 let slider = document.querySelector(".slider");
 
+let sliderService = document.querySelector(".slider-area-services");
+
 try {
   storageName = localStorage.getItem("name");
   storageEmail = localStorage.getItem("email");
@@ -137,3 +139,41 @@ slider.addEventListener("click", function(event) {
     currentSlide(id);
   }
 })
+
+function currentSlideService(n) {
+    showSlidesService(slideIndex = n);
+}
+
+function showSlidesService(n) {
+  let slides = document.getElementsByClassName("slide-service");
+  let tabs = document.getElementsByClassName("button-service");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (let i = 0; i < tabs.length; i++) {
+      tabs[i].className = tabs[i].className.replace(" button-service-active", "");
+    }
+
+  slides[slideIndex - 1].style.display = "block";
+  tabs[slideIndex - 1].className += " button-service-active";
+}
+
+sliderService.addEventListener("click", function(event) {
+  const target = event.target;
+  const id = target.id;
+
+  if (target.classList.contains("button-service")) {
+    currentSlideService(id);
+  }
+})
+
