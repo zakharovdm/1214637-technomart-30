@@ -272,7 +272,7 @@ img {
 }
 
 .button-order {
-  display: inline-block;
+  display: block;
   width: 150px;
   padding: 8px 0 8px 0;
 
@@ -468,6 +468,7 @@ img {
 
 .button-login {
   display: inline-block;
+  vertical-align: middle;
   width: 150px;
   padding: 12px 0 12px 0;
 
@@ -598,7 +599,7 @@ img {
 }
 
 .site-nav-link {
-  display: inline-block;
+  display: block;
   padding: 0 27px;
   margin-top: 16px;
   margin-bottom: 20px;
@@ -1146,6 +1147,14 @@ img {
   top: 23px;
 }
 
+.slide-guarantee img {
+  top: 0;
+}
+
+.slide-credit img {
+  top: 0;
+}
+
 .slide-text {
   width: 280px;
   margin-bottom: 128px;
@@ -1153,6 +1162,11 @@ img {
 
 .text-guarantee {
   width: 320px;
+  margin-bottom: 104px;
+}
+
+.text-credit {
+  margin-bottom: 88px;
 }
 
 .control-services {
@@ -1743,7 +1757,7 @@ img {
 }
 
 .pagination-item a {
-  display: inline-block;
+  display: block;
   padding: 10px 15px;
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1937,6 +1951,7 @@ img {
 
 .button {
   display: inline-block;
+  vertical-align: middle;
   min-width: 192px;
   margin-top: 25px;
   margin-bottom: 26px;
@@ -2227,18 +2242,20 @@ img {
   margin-top: -225px;
 }
 
-.modal-map iframe {
-  border: none;
-}
-
-.modal-map-block {
+.modal-map::after {
+  content: "";
   position: absolute;
   top: 0;
+  left: 0;
 
   width: 943px;
   height: 7px;
 
   background-color: var(--basic-red);
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 .modal-notice {

@@ -176,4 +176,3 @@ sliderService.addEventListener("click", function(event) {
     currentSlideService(id);
   }
 })
-
