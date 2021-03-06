@@ -184,7 +184,9 @@ img {
 }
 
 .header-bookmark {
-  margin-right: 10px;
+  /*margin-right: 10px;*/
+  width: 126px;
+  padding-right: 10px;
 }
 
 .header-inner-logo {
@@ -635,9 +637,6 @@ img {
   display: grid;
   -ms-grid-columns: (1fr)[7];
   grid-template-columns: repeat(7, 1fr);
-}
-
-.site-nav-list {
   margin: 0;
   padding: 0;
 
@@ -646,11 +645,13 @@ img {
 
 .site-nav-link {
   display: block;
+  height: 100%;
   padding: 0 27px;
   margin-top: 16px;
   margin-bottom: 20px;
 
   color: var(--basic-white);
+  outline: none;
 }
 
 .site-nav-item {
@@ -663,10 +664,6 @@ img {
 
 .site-nav-item:last-child {
   margin-right: 20px;
-}
-
-.site-nav-item a {
-  outline: none;
 }
 
 .site-nav-item:hover,
