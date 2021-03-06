@@ -789,7 +789,6 @@ img {
   margin-left: 23px;
   margin-top: 14px;
 
-
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -846,7 +845,6 @@ img {
   background-repeat: no-repeat;
 }
 
-
 .product-item:nth-child(2) {
   background-color: var(--basic-bright-cyan);
 }
@@ -882,7 +880,6 @@ img {
   background-image: url(../img/icons/icon-technics.svg);
   background-repeat: no-repeat;
 }
-
 
 .feature-item:nth-child(1) {
   background-color: var(--basic-lime-green);
@@ -1179,7 +1176,6 @@ img {
   background-image: url(../img/label-new.svg);
   background-repeat: no-repeat;
 }
-
 
 /* manufacturers */
 
@@ -2112,6 +2108,7 @@ img {
   margin-left: 0;
   margin-top: 0;
 }
+
 /* text */
 
 .text {
@@ -2206,7 +2203,6 @@ img {
 .breadcrumbs-item:last-child::after {
   display: none;
 }
-
 
 /* buttons */
 
@@ -2818,4 +2814,14 @@ img {
 
 ::-moz-placeholder, :-moz-placeholder {
     opacity: 1;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
