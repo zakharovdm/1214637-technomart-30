@@ -140,21 +140,15 @@ slider.addEventListener("click", function(event) {
   }
 })
 
+let slideIndexServ = 3;
+
 function currentSlideService(n) {
-    showSlidesService(slideIndex = n);
+    showSlidesService(slideIndexServ = n);
 }
 
 function showSlidesService(n) {
   let slides = document.getElementsByClassName("slide-service");
   let tabs = document.getElementsByClassName("button-service");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
 
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -164,8 +158,8 @@ function showSlidesService(n) {
       tabs[i].className = tabs[i].className.replace(" button-service-active", "");
     }
 
-  slides[slideIndex - 1].style.display = "block";
-  tabs[slideIndex - 1].className += " button-service-active";
+  slides[slideIndexServ - 3].style.display = "block";
+  tabs[slideIndexServ - 3].className += " button-service-active";
 }
 
 sliderService.addEventListener("click", function(event) {
