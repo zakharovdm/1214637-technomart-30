@@ -431,7 +431,8 @@ img {
 .login-name-link::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -41px;
+  top: 2px;
 
   width: 20px;
   height: 18px;
@@ -453,7 +454,7 @@ img {
   content: "";
   position: absolute;
   right: -40px;
-  top: 4px;
+  top: 2px;
 
   width: 20px;
   height: 17px;
@@ -578,9 +579,11 @@ img {
 }
 
 .login-name {
+  display: flex;
+  justify-content: center;
   width: 299px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-top: 25px;
 
   text-align: center;
@@ -589,6 +592,9 @@ img {
 }
 
 .login-name a {
+  display: block;
+  max-width: 200px;
+
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -613,11 +619,11 @@ img {
 .login-control::before {
   content: "";
   position: absolute;
-  right: 115px;
-  top: 6px;
+  right: 117px;
+  top: 7px;
 
-  width: 6px;
-  height: 7px;
+  width: 4px;
+  height: 4px;
 
   background-color: var(--basic-medium-dark-blue);
   border-radius: 50%;
@@ -786,6 +792,7 @@ img {
 
 .product-item h3,
 .feature-item h3 {
+  max-width: 150px;
   margin: 0;
   margin-top: 20px;
   margin-left: 23px;
@@ -802,6 +809,7 @@ img {
   padding-top: 10px;
   margin-left: 23px;
   margin-top: 14px;
+  margin-bottom: 5px;
 
   font-size: 14px;
   line-height: 18px;
@@ -827,7 +835,6 @@ img {
   position: relative;
 
   width: 300px;
-  min-height: 123px;
 }
 
 .product-item:nth-child(1) {
@@ -1037,10 +1044,9 @@ img {
 
 .goods-item h3 {
   width: 185px;
-  height: 43px;
   margin-left: 18px;
   margin-right: 18px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-top: 3px;
 
   font-size: 18px;
@@ -1887,11 +1893,10 @@ img {
   left: -35px;
   top: -2px;
 
-  width: 19px;
-  height: 19px;
+  width: 23px;
+  height: 23px;
 
-  border: 2px solid var(--basic-light-gray);
-  border-radius: 5px;
+  background-image: url(../img/icons/icon-checkbox-off.svg);
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -1905,7 +1910,7 @@ img {
 
 .filter-input-checkbox:hover:not(:disabled) + label::before,
 .filter-input-checkbox:focus:not(:disabled) + label::before {
-  border-color: var(--basic-high-gray);
+  background-image: url(../img/icons/icon-checkbox-off-dark.svg);
 }
 
 .filter-input-checkbox:checked:hover:not(:disabled) + label::before,
@@ -2015,25 +2020,28 @@ img {
 }
 
 .pagination-item {
-  margin-right: 9px;
+  margin-right: 10px;
 }
 
 .pagination-item a {
   display: block;
-  padding: 10px 15px;
+  min-width: 36px;
+  padding-bottom: 9px;
+  padding-top: 9px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
+  text-align: center;
 
   border: 1px solid var(--basic-high-light-gray);
   border-radius: 2px;
 }
 
 .next-page a {
-  padding: 10px 31px;
+  min-width: 138px;
 }
 
 .pagination-item a:hover:not(.pagination-item-active a),
@@ -2115,7 +2123,7 @@ img {
 }
 
 .title-description {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .slide-title {
@@ -2126,6 +2134,9 @@ img {
 /* text */
 
 .text {
+  position: relative;
+  z-index: 1;
+
   margin: 0;
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2135,7 +2146,7 @@ img {
 }
 
 .text-catalog {
-  padding-bottom: 68px;
+  padding-bottom: 69px;
   margin-bottom: 0;
 }
 
@@ -2223,11 +2234,13 @@ img {
 .button {
   display: inline-block;
   vertical-align: middle;
-  min-width: 192px;
+  min-width: 172px;
   margin-top: 25px;
   margin-bottom: 26px;
   padding-top: 11px;
   padding-bottom: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   font-size: 14px;
   line-height: 18px;
@@ -2240,13 +2253,13 @@ img {
 }
 
 .button-about {
-  width: 220px;
+  width: 200px;
   margin-top: 0;
   margin-bottom: 71px;
 }
 
 .button-contacts {
-  width: 300px;
+  width: 280px;
   margin-top: 18px;
 }
 
